@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+    <div id="editor"></div>
+    <script src="mobiledoc-kit.js"></script>
+
+    <script>
+      var onLoad = function() {
+        var element = document.querySelector('#editor');
+        var options = { mobiledoc: null, placeholder: 'Type your content here' };
+        var editor = new Mobiledoc.Editor(options);
+        editor.render(element);
+      }
+      window.addEventListener('DOMContentLoaded', onLoad, false);
+    </script>
+  </body>
+</html>
